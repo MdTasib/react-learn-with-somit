@@ -1,6 +1,6 @@
 import './App.css';
-import Header from './components/header/Header';
-import Shop from './components/Shop/Shop';
+// import Header from './components/header/Header';
+// import Shop from './components/Shop/Shop';
 import Person from './components/fakePerson/Person';
 
 function App() {

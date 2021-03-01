@@ -1,6 +1,28 @@
-.person-container {
+.singlePlayer {
+    border: 2px solid red;
+    margin: 10px;
+}
+.singlePlayer img {
+    width: 350px;
+    height: 450px;
+}
+img {
+    max-width: 100%;
+}
+.player-container {
     display: flex;
 }
-.singlePerson {
-    border: 2px solid red;
+.player {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.cart {
+    border-left: 3px solid red;
+    width: 30%;
+}
+.cart-descrition {
+    text-align: center;
 }

@@ -1,18 +1,34 @@
 import React, { useState, useEffect } from 'react';
-import personData from './person.json';
-import './person.css';
-import SinglePerson from './SinglePerson';
+import fakeData from './person.json';
+import Player from './Player';
+import './person.css'
+import Cart from './Cart';
 
+const allData = fakeData;
 const Person = () => {
-    const allData = personData;
+    const [players, setPlayers] = useState(allData);
 
+    useEffect(() => {
+        fetch(allData)
+            .then(response => response.json())
+            .then(data => setPlayers(data))
+    }, []);
+
+    const [cart, setCart] = useState([]);
+    const addToCart = (event) => {
+        const newCart = [...cart, event];
+        setCart(newCart);
+    }
 
     return (
-        <div className='person-container'>
-            <div className='single-person'>
+        <div className='player-container'>
+            <div className="player">
                 {
-                    allData.map(data => <SinglePerson data={data}></SinglePerson>)
+                    players.map((player) => <Player addToCart={addToCart} player={player} key={player.id}></Player>)
                 }
+            </div>
+            <div className="cart">
+                <Cart cart={cart}></Cart>
             </div>
         </div>
     );
