@@ -1,0 +1,6 @@
+.person-container {
+    display: flex;
+}
+.singlePerson {
+    border: 2px solid red;
+}
