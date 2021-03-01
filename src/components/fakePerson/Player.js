@@ -8,7 +8,7 @@ const Player = (props) => {
             <h3>Name : {name}</h3>
             <h5>Country : {country}</h5>
             <h5>Club : {club}</h5>
-            <span>Price : {price}</span><br />
+            <span>Price : ${price}</span><br />
             <button onClick={() => props.addToCart(props.player)}>Add To Cart</button>
         </div>
     );
