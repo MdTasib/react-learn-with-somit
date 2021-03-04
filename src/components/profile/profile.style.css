@@ -1,0 +1,15 @@
+.container {
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid lightblue;
+    padding: 20px;
+    margin-top: 20px;
+}
+.skills ul li {
+    padding: 10px 15px;
+    background:lightblue;
+}
+ul li {
+    display: inline-block;
+    margin: 10px;
+}
