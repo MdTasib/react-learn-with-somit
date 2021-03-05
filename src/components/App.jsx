@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Timer from './Timer/Index';
 import Styleing from './UseCssStyle';
+import EventHandle from './EventHandle/Index';
+import Inputs from './Input';
 
 class App extends Component {
     constructor(props) {
@@ -28,6 +30,10 @@ class App extends Component {
                 }}> Add 1+ </button> */}
 
                 {/* <Styleing /> */}
+
+                {/* <EventHandle /> */}
+
+                <Inputs />
 
             </div>
         )
