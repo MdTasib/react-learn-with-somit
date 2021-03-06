@@ -3,7 +3,8 @@ import Timer from './Timer/Index';
 import Styleing from './UseCssStyle';
 import EventHandle from './EventHandle/Index';
 import Inputs from './Input';
-import UnControlForm from './EventHandle/UnControlForm';
+import UnControlForm from './UnControlForm/UnControlForm';
+import ControlForm from './ControlForm/ControlForm';
 
 class App extends Component {
 
@@ -18,7 +19,9 @@ class App extends Component {
 
                 {/* <Inputs /> */}
 
-                <UnControlForm />
+                {/* <UnControlForm /> */}
+
+                <ControlForm />
 
             </div>
         )
