@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class ControlForm extends Component {
+class SplitForm extends Component {
     state = {
         name: '',
         email: '',
@@ -37,4 +37,4 @@ class ControlForm extends Component {
 
 
 
-export default ControlForm;
+export default SplitForm;
