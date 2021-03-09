@@ -5,7 +5,7 @@ import EventHandle from './EventHandle/Index';
 import Inputs from './Input';
 import UnControlForm from './UnControlForm/UnControlForm';
 import ControlForm from './ControlForm/ControlForm';
-import SplitForm from './SplitForm/SplitForm';
+import SingUpForm from './SingUpForm/SingUpForm';
 
 class App extends Component {
 
@@ -24,7 +24,7 @@ class App extends Component {
 
                 {/* <ControlForm /> */}
 
-                <SplitForm />
+                <SingUpForm />
 
             </div>
         )
